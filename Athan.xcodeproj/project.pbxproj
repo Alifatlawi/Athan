@@ -14,6 +14,15 @@
 		D44DF6642A811F910051E5E1 /* AthanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DF6632A811F910051E5E1 /* AthanTests.swift */; };
 		D44DF66E2A811F910051E5E1 /* AthanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DF66D2A811F910051E5E1 /* AthanUITests.swift */; };
 		D44DF6702A811F910051E5E1 /* AthanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DF66F2A811F910051E5E1 /* AthanUITestsLaunchTests.swift */; };
+		D44DF67E2A81201A0051E5E1 /* Adhan in Frameworks */ = {isa = PBXBuildFile; productRef = D44DF67D2A81201A0051E5E1 /* Adhan */; };
+		D44DF68D2A8121AA0051E5E1 /* PrayerTimeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DF68C2A8121AA0051E5E1 /* PrayerTimeHeader.swift */; };
+		D44DF6912A8125FC0051E5E1 /* PrayerTimeTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DF6902A8125FC0051E5E1 /* PrayerTimeTableItem.swift */; };
+		D44DF6932A8127B50051E5E1 /* AthanTimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DF6922A8127B50051E5E1 /* AthanTimeTable.swift */; };
+		D44DF6952A8129440051E5E1 /* LocationNotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DF6942A8129440051E5E1 /* LocationNotFoundView.swift */; };
+		D44DF6982A812C050051E5E1 /* AthanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DF6972A812C050051E5E1 /* AthanView.swift */; };
+		D44DF69A2A8140D90051E5E1 /* AthanHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DF6992A8140D90051E5E1 /* AthanHome.swift */; };
+		D44DF69C2A8141120051E5E1 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DF69B2A8141120051E5E1 /* TabBar.swift */; };
+		D44DF69E2A8146A40051E5E1 /* PrayerTimesClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DF69D2A8146A40051E5E1 /* PrayerTimesClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,14 @@
 		D44DF6692A811F910051E5E1 /* AthanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AthanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44DF66D2A811F910051E5E1 /* AthanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthanUITests.swift; sourceTree = "<group>"; };
 		D44DF66F2A811F910051E5E1 /* AthanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D44DF68C2A8121AA0051E5E1 /* PrayerTimeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeHeader.swift; sourceTree = "<group>"; };
+		D44DF6902A8125FC0051E5E1 /* PrayerTimeTableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeTableItem.swift; sourceTree = "<group>"; };
+		D44DF6922A8127B50051E5E1 /* AthanTimeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthanTimeTable.swift; sourceTree = "<group>"; };
+		D44DF6942A8129440051E5E1 /* LocationNotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNotFoundView.swift; sourceTree = "<group>"; };
+		D44DF6972A812C050051E5E1 /* AthanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthanView.swift; sourceTree = "<group>"; };
+		D44DF6992A8140D90051E5E1 /* AthanHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthanHome.swift; sourceTree = "<group>"; };
+		D44DF69B2A8141120051E5E1 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		D44DF69D2A8146A40051E5E1 /* PrayerTimesClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44DF67E2A81201A0051E5E1 /* Adhan in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +112,10 @@
 		D44DF6512A811F900051E5E1 /* Athan */ = {
 			isa = PBXGroup;
 			children = (
+				D44DF6962A812BF50051E5E1 /* Views */,
+				D44DF6892A8121920051E5E1 /* AthanView */,
+				D44DF6822A8120B00051E5E1 /* Components */,
+				D44DF67F2A8120520051E5E1 /* Model */,
 				D44DF6522A811F900051E5E1 /* AthanApp.swift */,
 				D44DF6542A811F900051E5E1 /* ContentView.swift */,
 				D44DF6562A811F910051E5E1 /* Assets.xcassets */,
@@ -127,6 +149,42 @@
 			path = AthanUITests;
 			sourceTree = "<group>";
 		};
+		D44DF67F2A8120520051E5E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D44DF69D2A8146A40051E5E1 /* PrayerTimesClass.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D44DF6822A8120B00051E5E1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D44DF69B2A8141120051E5E1 /* TabBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D44DF6892A8121920051E5E1 /* AthanView */ = {
+			isa = PBXGroup;
+			children = (
+				D44DF68C2A8121AA0051E5E1 /* PrayerTimeHeader.swift */,
+				D44DF6902A8125FC0051E5E1 /* PrayerTimeTableItem.swift */,
+				D44DF6922A8127B50051E5E1 /* AthanTimeTable.swift */,
+				D44DF6942A8129440051E5E1 /* LocationNotFoundView.swift */,
+			);
+			path = AthanView;
+			sourceTree = "<group>";
+		};
+		D44DF6962A812BF50051E5E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D44DF6972A812C050051E5E1 /* AthanView.swift */,
+				D44DF6992A8140D90051E5E1 /* AthanHome.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +201,9 @@
 			dependencies = (
 			);
 			name = Athan;
+			packageProductDependencies = (
+				D44DF67D2A81201A0051E5E1 /* Adhan */,
+			);
 			productName = Athan;
 			productReference = D44DF64F2A811F900051E5E1 /* Athan.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +276,9 @@
 				Base,
 			);
 			mainGroup = D44DF6462A811F900051E5E1;
+			packageReferences = (
+				D44DF67C2A81201A0051E5E1 /* XCRemoteSwiftPackageReference "adhan-swift" */,
+			);
 			productRefGroup = D44DF6502A811F900051E5E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +321,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44DF69E2A8146A40051E5E1 /* PrayerTimesClass.swift in Sources */,
+				D44DF6932A8127B50051E5E1 /* AthanTimeTable.swift in Sources */,
 				D44DF6552A811F900051E5E1 /* ContentView.swift in Sources */,
+				D44DF6912A8125FC0051E5E1 /* PrayerTimeTableItem.swift in Sources */,
 				D44DF6532A811F900051E5E1 /* AthanApp.swift in Sources */,
+				D44DF68D2A8121AA0051E5E1 /* PrayerTimeHeader.swift in Sources */,
+				D44DF6952A8129440051E5E1 /* LocationNotFoundView.swift in Sources */,
+				D44DF6982A812C050051E5E1 /* AthanView.swift in Sources */,
+				D44DF69A2A8140D90051E5E1 /* AthanHome.swift in Sources */,
+				D44DF69C2A8141120051E5E1 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +491,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Athan/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "In order to have instant access to the most accurate prayer times via the Athan app, you need to allow location access.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +520,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Athan/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "In order to have instant access to the most accurate prayer times via the Athan app, you need to allow location access.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -577,6 +651,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D44DF67C2A81201A0051E5E1 /* XCRemoteSwiftPackageReference "adhan-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/batoulapps/adhan-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D44DF67D2A81201A0051E5E1 /* Adhan */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D44DF67C2A81201A0051E5E1 /* XCRemoteSwiftPackageReference "adhan-swift" */;
+			productName = Adhan;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D44DF6472A811F900051E5E1 /* Project object */;
 }
