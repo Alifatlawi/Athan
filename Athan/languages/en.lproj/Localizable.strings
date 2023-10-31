@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  Athan
+
+  Created by Tacettin Pekin on 31.10.2023.
+  
+*/
+
+
+/* English Version of Localizable.strings */
+
+"prayer_fajr" = "Fajr";
+"prayer_sunrise" = "Sunrise";
+"prayer_dhuhr" = "Dhuhr";
+"prayer_asr" = "Asr";
+"prayer_maghrib" = "Maghrib";
+"prayer_isha" = "Isha";
+// ... any other strings you need to localize ...
+

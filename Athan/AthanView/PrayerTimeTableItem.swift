@@ -13,6 +13,23 @@ struct PrayerTimeTableItem: View {
     let prayerTime: String
     @State var isPlayin = true
     
+    func getIconName(for prayer: String) -> String {
+            switch prayer {
+            case "Fajr":
+                return "sunrise.fill"
+            case "Dhuhr":
+                return "sun.max.fill"
+            case "Asr":
+                return "cloud.sun.fill"
+            case "Maghrib":
+                return "sunset.fill"
+            case "Isha":
+                return "moon.fill"
+            default:
+                return "sunrise.fill"  // default icon if prayer name doesn't match
+            }
+        }
+    
     var body: some View {
         VStack{
             VStack(spacing: 20){
@@ -22,10 +39,12 @@ struct PrayerTimeTableItem: View {
                             Button(action: {
                                 isPlayin.toggle()
                             }, label: {
-                                Image(systemName: "clock.circle.fill")
-                                    .foregroundColor(Color("color"))
-                                    .padding(.leading, 60)
+                                HStack {
+                                    Image(systemName: getIconName(for: prayerName))
+                                        .foregroundColor(Color("color"))
+                                        .padding(.leading, 60)
                                     .padding(.bottom, 70)
+                                }
                             })
                         }
                         VStack(alignment: .leading){

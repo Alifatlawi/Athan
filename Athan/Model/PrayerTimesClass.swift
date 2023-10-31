@@ -27,14 +27,23 @@ class PrayerTimesClass: NSObject, ObservableObject, CLLocationManagerDelegate {
         "Maghrib": true,
         "Isha": true
     ]
-
+    
     private var notificationCenter: UNUserNotificationCenter {
         UNUserNotificationCenter.current()
     }
     
-    func scheduleNotification(for prayerTime: Date, with prayerName: String) {
+    func scheduleNotification(for prayerTime: Date, with prayerName: String, note: String?) {
         let content = UNMutableNotificationContent()
+        content.title = NSString.localizedUserNotificationString(forKey: "Prayer Time", arguments: nil)
+        if let note = note, !note.isEmpty {
+            content.body = NSString.localizedUserNotificationString(forKey: note, arguments: nil)
+        } else {
+            content.body = NSString.localizedUserNotificationString(forKey: "\(prayerName) prayer is at \(formattedPrayerTime(prayerTime))", arguments: nil)
+        }
         
+        // Set the sound for the notification
+        content.sound = UNNotificationSound.default
+
         let prayerComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: prayerTime)
         let trigger = UNCalendarNotificationTrigger(dateMatching: prayerComponents, repeats: false)
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
@@ -45,7 +54,8 @@ class PrayerTimesClass: NSObject, ObservableObject, CLLocationManagerDelegate {
             }
         }
     }
-    
+
+
     func schedulePrayerTimeNotifications() {
         guard let prayers = prayers else {
             print("Cannot schedule notifications because prayer times are not available yet.")
@@ -53,21 +63,21 @@ class PrayerTimesClass: NSObject, ObservableObject, CLLocationManagerDelegate {
         }
         
         let prayerTimes = [
-            ("Fajr", prayers.fajr),
-            ("Dhuhr", prayers.dhuhr),
-            ("Asr", prayers.asr),
-            ("Maghrib", prayers.maghrib),
-            ("Isha", prayers.isha),
+            ("Fajr", prayers.fajr, UserDefaults.standard.string(forKey: "Fajr Note")),
+            ("Dhuhr", prayers.dhuhr, UserDefaults.standard.string(forKey: "Dhuhr Note")),
+            ("Asr", prayers.asr, UserDefaults.standard.string(forKey: "Asr Note")),
+            ("Maghrib", prayers.maghrib, UserDefaults.standard.string(forKey: "Maghrib Note")),
+            ("Isha", prayers.isha, UserDefaults.standard.string(forKey: "Isha Note")),
         ]
         
         notificationCenter.removeAllPendingNotificationRequests()
-        for (prayerName, prayerTime) in prayerTimes {
+        for (prayerName, prayerTime, note) in prayerTimes {
             if notificationSettings[prayerName] == true {
-                scheduleNotification(for: prayerTime, with: prayerName)
-              }
-          
+                scheduleNotification(for: prayerTime, with: prayerName, note: note)
             }
         }
+    }
+
     
     func ubdateNotificationSettings(for prayerName: String, sendNotification: Bool){
         

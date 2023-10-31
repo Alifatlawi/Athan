@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  Athan
+
+  Created by Tacettin Pekin on 31.10.2023.
+  
+*/
+
+
+/* Arabic Version of Localizable.strings */
+
+"prayer_fajr" = "heyyyy";
+"prayer_sunrise" = "الشروق";
+"prayer_dhuhr" = "الظهر";
+"prayer_asr" = "العصر";
+"prayer_maghrib" = "المغرب";
+"prayer_isha" = "العشاء";
+// ... any other strings you need to localize ...

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		413754412AF139E50017C0B6 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413754402AF139E50017C0B6 /* SettingView.swift */; };
-		413754432AF13CAE0017C0B6 /* testView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413754422AF13CAE0017C0B6 /* testView.swift */; };
+		14F42A1B2AF19C9600CC7EFE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14F42A1D2AF19C9600CC7EFE /* Localizable.strings */; };
+		413754412AF139E50017C0B6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413754402AF139E50017C0B6 /* SettingsView.swift */; };
 		D44DF6532A811F900051E5E1 /* AthanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DF6522A811F900051E5E1 /* AthanApp.swift */; };
 		D44DF6552A811F900051E5E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DF6542A811F900051E5E1 /* ContentView.swift */; };
 		D44DF6572A811F910051E5E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D44DF6562A811F910051E5E1 /* Assets.xcassets */; };
@@ -45,8 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		413754402AF139E50017C0B6 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		413754422AF13CAE0017C0B6 /* testView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testView.swift; sourceTree = "<group>"; };
+		14F42A212AF19D5E00CC7EFE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		14F42A222AF1A1B200CC7EFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		413754402AF139E50017C0B6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		D44DF64F2A811F900051E5E1 /* Athan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Athan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44DF6522A811F900051E5E1 /* AthanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthanApp.swift; sourceTree = "<group>"; };
 		D44DF6542A811F900051E5E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14F42A1E2AF19D0300CC7EFE /* languages */ = {
+			isa = PBXGroup;
+			children = (
+				14F42A1D2AF19C9600CC7EFE /* Localizable.strings */,
+			);
+			path = languages;
+			sourceTree = "<group>";
+		};
 		D44DF6462A811F900051E5E1 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +125,7 @@
 		D44DF6512A811F900051E5E1 /* Athan */ = {
 			isa = PBXGroup;
 			children = (
+				14F42A1E2AF19D0300CC7EFE /* languages */,
 				D44DF6962A812BF50051E5E1 /* Views */,
 				D44DF6892A8121920051E5E1 /* AthanView */,
 				D44DF6822A8120B00051E5E1 /* Components */,
@@ -185,8 +195,7 @@
 			children = (
 				D44DF6972A812C050051E5E1 /* AthanView.swift */,
 				D44DF6992A8140D90051E5E1 /* AthanHome.swift */,
-				413754402AF139E50017C0B6 /* SettingView.swift */,
-				413754422AF13CAE0017C0B6 /* testView.swift */,
+				413754402AF139E50017C0B6 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -280,6 +289,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = D44DF6462A811F900051E5E1;
 			packageReferences = (
@@ -302,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D44DF65A2A811F910051E5E1 /* Preview Assets.xcassets in Resources */,
+				14F42A1B2AF19C9600CC7EFE /* Localizable.strings in Resources */,
 				D44DF6572A811F910051E5E1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,10 +346,9 @@
 				D44DF68D2A8121AA0051E5E1 /* PrayerTimeHeader.swift in Sources */,
 				D44DF6952A8129440051E5E1 /* LocationNotFoundView.swift in Sources */,
 				D44DF6982A812C050051E5E1 /* AthanView.swift in Sources */,
-				413754432AF13CAE0017C0B6 /* testView.swift in Sources */,
 				D44DF69A2A8140D90051E5E1 /* AthanHome.swift in Sources */,
 				D44DF69C2A8141120051E5E1 /* TabBar.swift in Sources */,
-				413754412AF139E50017C0B6 /* SettingView.swift in Sources */,
+				413754412AF139E50017C0B6 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,11 +384,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		14F42A1D2AF19C9600CC7EFE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14F42A212AF19D5E00CC7EFE /* ar */,
+				14F42A222AF1A1B200CC7EFE /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		D44DF6712A811F910051E5E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -440,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -499,7 +523,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Athan/Preview Content\"";
-				DEVELOPMENT_TEAM = NHZZ4N5FVR;
+				DEVELOPMENT_TEAM = 2G4SF4ARQP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "In order to have instant access to the most accurate prayer times via the Athan app, you need to allow location access.";
@@ -514,7 +538,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aliamer.PrayerTime;
+				PRODUCT_BUNDLE_IDENTIFIER = com.biligobaa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -530,7 +554,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Athan/Preview Content\"";
-				DEVELOPMENT_TEAM = NHZZ4N5FVR;
+				DEVELOPMENT_TEAM = 2G4SF4ARQP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "In order to have instant access to the most accurate prayer times via the Athan app, you need to allow location access.";
@@ -545,7 +569,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aliamer.PrayerTime;
+				PRODUCT_BUNDLE_IDENTIFIER = com.biligobaa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

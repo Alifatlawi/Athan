@@ -21,7 +21,7 @@ struct TabBar: View {
                    .tag(0)
 
                // Tab 2
-               testView()
+               SettingsView()
                    .tabItem {
                        Image(systemName: "gear")
                        Text("Settings")
@@ -34,4 +34,5 @@ struct TabBar: View {
 
 #Preview {
     TabBar()
+        .preferredColorScheme(.dark)
 }
