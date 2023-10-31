@@ -19,7 +19,7 @@ struct AthanView: View {
                 Color("bg")
                     .ignoresSafeArea()
                 ScrollView{
-                    if let error = prayerClass.error {
+                    if prayerClass.error != nil {
                         VStack{}
                         .onAppear{
                             isPresented = true
@@ -32,8 +32,10 @@ struct AthanView: View {
                             } else {
                                         PrayerTimeHeader(prayerName: "Imsak", prayerTime: Date(), location: prayerClass.city ?? "__")
                                             .frame(maxWidth: .infinity, alignment: .center)
+                                            .padding()
                                     }
                                     AthanTimeTable(prayerClass: prayerClass)
+                                .padding(.horizontal, 5)
                                         .listRowSeparator(.hidden)
                                         .onAppear {
                                             isPresented = false

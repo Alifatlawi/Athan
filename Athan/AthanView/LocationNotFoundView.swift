@@ -52,8 +52,7 @@ struct LocationNotFoundView: View {
                            
                   } label: {
                       Image(systemName: "location.fill")
-                          .font(.system(size: 22))
-                          .fontWeight(.bold)
+                          .font(.system(size: 22).bold())
                           .foregroundColor(.white)
                       
                       Text("Allow Location Access")

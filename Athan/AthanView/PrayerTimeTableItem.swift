@@ -38,7 +38,7 @@ struct PrayerTimeTableItem: View {
                                 .font(.system(size: 15))
                                 .fontWeight(.medium)
                         }
-                        .padding(.trailing, 30)
+                        .padding(.trailing, 15)
                         .padding(.top, 30)
                     }
                 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		413754412AF139E50017C0B6 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413754402AF139E50017C0B6 /* SettingView.swift */; };
+		413754432AF13CAE0017C0B6 /* testView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413754422AF13CAE0017C0B6 /* testView.swift */; };
 		D44DF6532A811F900051E5E1 /* AthanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DF6522A811F900051E5E1 /* AthanApp.swift */; };
 		D44DF6552A811F900051E5E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DF6542A811F900051E5E1 /* ContentView.swift */; };
 		D44DF6572A811F910051E5E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D44DF6562A811F910051E5E1 /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		413754402AF139E50017C0B6 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		413754422AF13CAE0017C0B6 /* testView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testView.swift; sourceTree = "<group>"; };
 		D44DF64F2A811F900051E5E1 /* Athan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Athan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44DF6522A811F900051E5E1 /* AthanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthanApp.swift; sourceTree = "<group>"; };
 		D44DF6542A811F900051E5E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -181,6 +185,8 @@
 			children = (
 				D44DF6972A812C050051E5E1 /* AthanView.swift */,
 				D44DF6992A8140D90051E5E1 /* AthanHome.swift */,
+				413754402AF139E50017C0B6 /* SettingView.swift */,
+				413754422AF13CAE0017C0B6 /* testView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -252,7 +258,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					D44DF64E2A811F900051E5E1 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -329,8 +335,10 @@
 				D44DF68D2A8121AA0051E5E1 /* PrayerTimeHeader.swift in Sources */,
 				D44DF6952A8129440051E5E1 /* LocationNotFoundView.swift in Sources */,
 				D44DF6982A812C050051E5E1 /* AthanView.swift in Sources */,
+				413754432AF13CAE0017C0B6 /* testView.swift in Sources */,
 				D44DF69A2A8140D90051E5E1 /* AthanHome.swift in Sources */,
 				D44DF69C2A8141120051E5E1 /* TabBar.swift in Sources */,
+				413754412AF139E50017C0B6 /* SettingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +411,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -463,6 +472,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -489,6 +499,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Athan/Preview Content\"";
+				DEVELOPMENT_TEAM = NHZZ4N5FVR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "In order to have instant access to the most accurate prayer times via the Athan app, you need to allow location access.";
@@ -497,12 +508,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = eyh.com.Athan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliamer.PrayerTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -518,6 +530,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Athan/Preview Content\"";
+				DEVELOPMENT_TEAM = NHZZ4N5FVR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "In order to have instant access to the most accurate prayer times via the Athan app, you need to allow location access.";
@@ -526,12 +539,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = eyh.com.Athan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliamer.PrayerTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -546,10 +560,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NHZZ4N5FVR;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = eyh.com.AthanTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliamer.PrayerTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -565,10 +580,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NHZZ4N5FVR;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = eyh.com.AthanTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliamer.PrayerTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -583,9 +599,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NHZZ4N5FVR;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = eyh.com.AthanUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliamer.PrayerTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -600,9 +617,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NHZZ4N5FVR;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = eyh.com.AthanUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliamer.PrayerTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;

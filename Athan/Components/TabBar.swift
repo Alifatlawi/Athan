@@ -21,27 +21,17 @@ struct TabBar: View {
                    .tag(0)
 
                // Tab 2
-               Text("Tab 2")
+               testView()
                    .tabItem {
-                       Image(systemName: "magnifyingglass")
-                       Text("Search")
+                       Image(systemName: "gear")
+                       Text("Settings")
                    }
                    .tag(1)
-
-               // Tab 3
-               Text("Tab 3")
-                   .tabItem {
-                       Image(systemName: "person")
-                       Text("Profile")
-                   }
-                   .tag(2)
            }
            .accentColor(Color("color"))
     }
 }
 
-struct TabBar_Previews: PreviewProvider {
-    static var previews: some View {
-        TabBar()
-    }
+#Preview {
+    TabBar()
 }
