@@ -13,33 +13,37 @@ struct SettingsView: View {
                 Color("bg")
                     .ignoresSafeArea()
                 
-                VStack(spacing: 20) {
-                    Text("Prayer Notes")
-                        .font(.largeTitle)
-                        .bold()
-                        .foregroundColor(.white)
-                        .padding(.top)
-                    
-                    PrayerNoteEntry(iconName: "sunrise.fill", color: .orange, placeholder: "Fajr Note", note: $fajrNote)
-                    PrayerNoteEntry(iconName: "sun.max.fill", color: .yellow, placeholder: "Dhuhr Note", note: $dhuhrNote)
-                    PrayerNoteEntry(iconName: "cloud.sun.fill", color: .orange, placeholder: "Asr Note", note: $asrNote)
-                    PrayerNoteEntry(iconName: "sunset.fill", color: .red, placeholder: "Maghrib Note", note: $maghribNote)
-                    PrayerNoteEntry(iconName: "moon.fill", color: .yellow, placeholder: "Isha Note", note: $ishaNote)
-                    
-                    Spacer()
-                    
-                    VStack(spacing: 8) {
-                        Text("App Idea by Souad Haider")
-                            .font(.headline)
+                ScrollView {
+                    VStack(spacing: 20) {
+                        Text("Prayer Notes")
+                            .font(.largeTitle)
+                            .bold()
                             .foregroundColor(.white)
+                            .padding(.top)
                         
-                        Text("Developed by Ali Alfatalwi")
-                            .font(.headline)
-                            .foregroundColor(.white)
+                        PrayerNoteEntry(iconName: "sunrise.fill", color: .orange, placeholder: "Fajr Note", note: $fajrNote)
+                        PrayerNoteEntry(iconName: "sun.max.fill", color: .yellow, placeholder: "Dhuhr Note", note: $dhuhrNote)
+                        PrayerNoteEntry(iconName: "cloud.sun.fill", color: .orange, placeholder: "Asr Note", note: $asrNote)
+                        PrayerNoteEntry(iconName: "sunset.fill", color: .red, placeholder: "Maghrib Note", note: $maghribNote)
+                        PrayerNoteEntry(iconName: "moon.fill", color: .yellow, placeholder: "Isha Note", note: $ishaNote)
+                        
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        
+                        VStack(spacing: 8) {
+                            Text("App Idea by Souad Haider")
+                                .font(.headline)
+                                .foregroundColor(.white)
+                            
+                            Text("Developed by Ali Alfatalwi")
+                                .font(.headline)
+                                .foregroundColor(.white)
+                        }
+                        .padding(.bottom)
                     }
-                    .padding(.bottom)
+                    .padding()
                 }
-                .padding()
             }
             .navigationBarTitle("Settings", displayMode: .inline)
         }

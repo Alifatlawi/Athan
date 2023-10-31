@@ -34,7 +34,7 @@ class PrayerTimesClass: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     func scheduleNotification(for prayerTime: Date, with prayerName: String, note: String?) {
         let content = UNMutableNotificationContent()
-        content.title = NSString.localizedUserNotificationString(forKey: "Prayer Time", arguments: nil)
+        content.title = NSString.localizedUserNotificationString(forKey: "\(prayerName) Prayer Time", arguments: nil)
         if let note = note, !note.isEmpty {
             content.body = NSString.localizedUserNotificationString(forKey: note, arguments: nil)
         } else {
